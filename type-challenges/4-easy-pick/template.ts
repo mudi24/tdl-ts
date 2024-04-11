@@ -1,22 +1,22 @@
 // ts 联合类型 union
 
-type MyPick<T, K extends keyof T> = {
-  [P in K]: T[P];
-};
+// type MyPick<T, K extends keyof T> = {
+//   [P in K]: T[P];
+// };
 
-// js
-// 对比学习法
-function myPick(todo, keys) {
-  const obj = {};
+// // js
+// // 对比学习法
+// function myPick(todo, keys) {
+//   const obj = {};
 
-  keys.forEach((key) => {
-    if (key in todo) {
-      obj[key] = todo[key];
-    }
-  });
+//   keys.forEach((key) => {
+//     if (key in todo) {
+//       obj[key] = todo[key];
+//     }
+//   });
 
-  return obj;
-}
+//   return obj;
+// }
 
 // 涉及到的知识点
 // 1. 返回一个对象
